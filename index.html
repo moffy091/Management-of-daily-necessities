@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>日用品管理アプリ</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div style="text-align: right;">
+    <button id="edit-toggle">編集</button>
+  </div>
+
+  <h1>日用品在庫管理</h1>
+<div id="item-list"></div>
+
+<div id="add-form" style="display: none;">
+  <input type="text" id="item-name" placeholder="商品名" />
+  <input type="number" id="item-quantity" placeholder="数量" min="1" />
+  <button onclick="addItem()">追加</button>
+</div>
+
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+body {
+  font-family: sans-serif;
+  background: #f8f8f8;
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+}
+
+#edit-toggle {
+  margin-bottom: 10px;
+}
+
+h1 {
+  text-align: center;
+  color: #333
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.item-name {
+  flex: 1;
+}
+
+.item-controls button {
+  margin-left: 5px;
+}
+
+.add-form {
+  margin-top: 20px;
+  display: flex;
+  gap: 5px;
+}
+
+.add-form input {
+  flex: 1;
+  padding: 5px;
+}
+
+
+.drag-handle {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+  margin-right: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: grab;
+}
+
+.drag-handle::before,
+.drag-handle::after,
+.drag-handle div {
+  content: "";
+  height: 2px;
+  background: #333;
+  margin: 2px 0;
+  border-radius: 1px;
+  width: 100%;
+}
+
+.drag-handle div {
+  background: #999;
+}
